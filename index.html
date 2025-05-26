@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jesin's Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Jesin's E-commerce Store</h1>
+  </header>
+
+  <!-- Cart toggle button -->
+  <button id="toggle-cart">🛒 View Cart</button>
+
+  <div class="controls">
+    <div>
+      <label for="category">Filter by Category:</label>
+      <select id="category">
+        <option value="all">All</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+        <option value="books">Books</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="sort">Sort by Price:</label>
+      <select id="sort">
+        <option value="default">Default</option>
+        <option value="low-to-high">Low to High</option>
+        <option value="high-to-low">High to Low</option>
+      </select>
+    </div>
+  </div>
+
+  <main id="product-list">
+    <!-- Products will be generated dynamically -->
+  </main>
+
+  <!-- Cart Section -->
+  <div id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p id="total">Total: ₹0</p>
+    <button id="checkout-btn">Checkout</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Jesin's Store</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
